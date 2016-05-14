@@ -64,6 +64,8 @@ Lora:400,700italic,700,400italic' rel='stylesheet' type='text/css'>
         var html = $.map(data, function(el,i){
           el = el.replace(/["]+/g, '')
           el = el.replace(/:flame:/g, '🔥')
+          el = el.replace(/:cloud:/g, '☁')
+          el = el.replace(/:lightning:/g, '⚡')
           $(".row").append($("<p><small>" + i + "</small><a class='btn button-hvr-shadow-radial' href=\"https://twitter.com/intent/tweet?text="
                               + encodeURIComponent(el)
                               + "\" target='_blank'><span><strong>"
